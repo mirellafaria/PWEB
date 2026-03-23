@@ -1,0 +1,154 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#ffffff;
+}
+
+/* HEADER */
+
+.header{
+background:pink;
+color:white;
+padding:25px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.header h1{
+font-family:'Playfair Display',serif;
+font-size:40px;
+text-align:center;
+}
+
+.menu{
+display:flex;
+gap:20px;
+margin-top:10px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu a:hover{
+text-decoration:underline;
+}
+
+
+/* CONTAINER */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+
+/* DESTAQUE */
+
+.destaque h2{
+font-family:'Poppins',sans-serif;
+text-align:center;
+color:rgb(231,170,180);
+font-size:20px;
+margin-bottom:20px;
+}
+
+.conteudo-destaque{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+text-align:center;
+}
+
+.conteudo-destaque img{
+width:350px;
+max-width:100%;
+height:auto;
+}
+
+.conteudo-destaque h3{
+font-size:22px;
+}
+
+.conteudo-destaque p{
+max-width:700px;
+text-align:justify;
+line-height:1.6;
+}
+
+
+/* NOTICIAS */
+
+.noticias{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:#f4f4f4;
+padding:15px;
+border-radius:8px;
+
+width:calc(25% - 20px);
+
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+
+transition:0.2s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+
+/* FOOTER */
+
+.footer{
+background:pink;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media(max-width:900px){
+
+.card{
+width:calc(50% - 20px);
+}
+
+}
+
+@media(max-width:500px){
+
+.card{
+width:100%;
+}
+
+}
