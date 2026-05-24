@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade 14</title>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container{
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px white;
+        width: 350px;
+        text-align: center;
+    }
+
+    h1{
+        color: #6a5acd;
+    }
+
+    input[type="text"]{
+        width: 90%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid pink;
+        font-size: 16px;
+        outline: none;
+    }
+
+    .opcoes{
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    label{
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Transformar textos :D</h1>
+
+    <input type="text" id="texto" placeholder="Digite algo...">
+
+    <div class="opcoes">
+        <label>
+            <input type="radio" name="opcao" onclick="maiuscula()">
+            Letras Maiúsculas
+        </label>
+
+        <label>
+            <input type="radio" name="opcao" onclick="minuscula()">
+            Letras Minúsculas
+        </label>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
