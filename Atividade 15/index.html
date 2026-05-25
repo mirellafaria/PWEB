@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #dff6ff;
+        }
+
+        .container{
+            width: 500px;
+            margin: auto;
+            background-color: #00cfff;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .radio{
+            width: auto;
+        }
+
+        .botoes{
+            text-align: center;
+        }
+
+        button{
+            padding: 8px 15px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: lightgray;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Formulário Principal</h1>
+
+        <form name="nomeform" onsubmit="return validar()">
+
+            <label>Nome:</label>
+            <input type="text" name="nome">
+
+            <label>Email:</label>
+            <input type="email" name="email">
+
+            <label>Comentário:</label>
+            <textarea name="comentario" rows="5"></textarea>
+
+            <h3>Pesquisa</h3>
+
+            <p>Primeira vez nesta página?</p>
+
+            <input class="radio" type="radio" name="pesquisa" value="sim"> Sim
+
+            <input class="radio" type="radio" name="pesquisa" value="nao"> Não
+
+            <br><br>
+
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
